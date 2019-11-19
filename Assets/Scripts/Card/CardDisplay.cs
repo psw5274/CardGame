@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 
-public class CardDisplay : MonoBehaviour, IPointerDownHandler
+public class CardDisplay : MonoBehaviour
 {
     public Card cardData;
 
@@ -42,11 +42,22 @@ public class CardDisplay : MonoBehaviour, IPointerDownHandler
         this.cardCost.text = cardData.cardCost.ToString();
         this.cardPortrait.sprite = cardData.cardPortrait;
         this.cardTemplate.sprite = cardData.cardTemplate;
-
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void UseCard(Character target = null)
     {
-        cardData.UseCard();
+        cardData.UseCard(target);
+        this.RemoveCard();
+    }
+
+    public void SetTarget()
+    {
+        
+    }
+
+    // 묘지로 보내거나 풀링 할 수도 있어야함
+    public void RemoveCard()
+    {
+        Destroy(this.gameObject);
     }
 }

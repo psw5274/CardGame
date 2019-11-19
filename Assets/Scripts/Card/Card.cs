@@ -7,7 +7,7 @@ public class Card : ScriptableObject
 {
     // 카드에 들어가는 능력들
     [SerializeField]
-    public List<CardAbility> cardAbilityList;
+    public List<AbstractCardAbility> cardAbilityList;
 
     public string cardName;
     public string cardDescription;
@@ -17,7 +17,7 @@ public class Card : ScriptableObject
 
     public void UseCard(Character target = null)
     {
-        foreach (CardAbility ability in cardAbilityList)
+        foreach (AbstractCardAbility ability in cardAbilityList)
         {
             ability.UseAbility(target);
         }

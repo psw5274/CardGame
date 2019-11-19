@@ -63,9 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Card\Card.cs" />
+    <Compile Include="Assets\Scripts\Card\CardAbility\AbstractCardAbility.cs" />
     <Compile Include="Assets\Scripts\Card\CardAbility\AttackAbility.cs" />
     <Compile Include="Assets\Scripts\Card\CardAbility\BuffAbility.cs" />
-    <Compile Include="Assets\Scripts\Card\CardAbility\CardAbility.cs" />
     <Compile Include="Assets\Scripts\Card\CardDisplay.cs" />
     <Compile Include="Assets\Scripts\Card\CardDraggable.cs" />
     <Compile Include="Assets\Scripts\Card\DropZone.cs" />

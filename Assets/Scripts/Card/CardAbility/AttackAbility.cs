@@ -4,26 +4,20 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "New Attack Ability", menuName = "Attack Ability")]
-public class AttackAbility : CardAbility
+public class AttackAbility : AbstractCardAbility
 {
     override public void UseAbility(Character target = null)
     {
-        if(target == null)
-        {
-            target = BattleManager.Instance.enemyCharacter;
-            Debug.Log(target);
-
-        }
+        target = target == null ? BattleManager.Instance.enemyCharacter : target;
         base.UseAbility(target);
 
-        Debug.Log(target.ToString());
-        target.statHP -= amount;
+        target.GetDamage(amount);
     }
 
     public override void CardEffect()
     {
         base.CardEffect();
-        Debug.Log("ATTACK EFFECT");
+        Debug.Log("ATTACK_EFFECT");
 
     }
 }

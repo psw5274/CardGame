@@ -10,10 +10,13 @@ public class DropZone : MonoBehaviour, IDropHandler
     {
         Debug.Log(eventData.pointerDrag.name + " was dropp " + gameObject.name);
 
-        CardDraggable d = eventData.pointerDrag.GetComponent<CardDraggable>();
-        if(d!=null)
+        CardDraggable cardDraggable = eventData.pointerDrag.GetComponent<CardDraggable>();
+        if(cardDraggable!=null)
         {
-            d.parentToReturnTo = this.transform;
+            cardDraggable.parentToReturnTo = this.transform;
         }
+
+        // DropZone 올렸을 때 카드 사용, 일단 타겟 미지정
+        cardDraggable.gameObject.GetComponent<CardDisplay>().UseCard();
     }
 }
