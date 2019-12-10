@@ -10,16 +10,16 @@ public class CardDisplay : MonoBehaviour
     public Card cardData;
 
     // Displayed Component
-    private Image cardTemplate;
-    private Image cardPortrait;
-    private Text cardName;
-    private Text cardDescription;
-    private Text cardCost;
+    public Image cardTemplate;
+    public Image cardPortrait;
+    public Text cardName;
+    public Text cardDescription;
+    public Text cardCost;
 
 
     void Start()
     {
-        cardTemplate = GetComponent<Image>();
+        cardTemplate = transform.Find("CardTemplate").GetComponent<Image>();
         cardPortrait = transform.Find("CardPortrait").GetComponent<Image>();
 
         cardName = transform.Find("CardName").GetComponent<Text>();

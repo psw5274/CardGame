@@ -11,13 +11,12 @@ public class AttackAbility : AbstractCardAbility
         target = target == null ? BattleManager.Instance.enemyCharacter : target;
         base.UseAbility(target);
 
-        target.GetDamage(amount);
+        target.OnDamage(amount);
     }
 
     public override void CardEffect()
     {
         base.CardEffect();
         Debug.Log("ATTACK_EFFECT");
-
     }
 }

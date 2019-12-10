@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Character\Enemy.cs" />
     <Compile Include="Assets\Scripts\Character\Player.cs" />
     <Compile Include="Assets\Scripts\Manager\BattleManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\DeckManager.cs" />
     <Compile Include="Assets\Scripts\Manager\Manager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Users/PSW/Desktop/Work/Project/CardGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

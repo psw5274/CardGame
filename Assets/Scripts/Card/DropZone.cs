@@ -5,7 +5,6 @@ using UnityEngine.EventSystems;
 
 public class DropZone : MonoBehaviour, IDropHandler
 {
-    // Start is called before the first frame update
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log(eventData.pointerDrag.name + " was dropp " + gameObject.name);
@@ -16,7 +15,12 @@ public class DropZone : MonoBehaviour, IDropHandler
             cardDraggable.parentToReturnTo = this.transform;
         }
 
+
         // DropZone 올렸을 때 카드 사용, 일단 타겟 미지정
-        cardDraggable.gameObject.GetComponent<CardDisplay>().UseCard();
+        // 플레이어 턴에만 사용 가능
+        if (BattleManager.Instance.currentTurn == Team.Player)
+        {
+            cardDraggable.gameObject.GetComponent<CardDisplay>().UseCard();
+        }
     }
 }
