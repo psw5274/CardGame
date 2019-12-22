@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04e4c68e1b2a3e4087971e129e2c24c, type: 3}
+  m_Name: ThrowingKnife
+  m_EditorClassIdentifier: 
+  cardAbilityList:
+  - {fileID: 11400000, guid: 582647acea5dcb945af49eb7ead70a44, type: 2}
+  cardName: "\uB2E8\uAC80\uD22C\uCC99"
+  cardDescription: "\uC0C1\uB300\uBC29\uC5D0\uAC8C \uB2E8\uAC80\uC744 \uD22C\uCC99\uD574
+    6\uC758 \uB300\uBBF8\uC9C0\uB97C \uC900\uB2E4"
+  cardCost: 1
+  cardPortrait: {fileID: 21300000, guid: 5d1d51ce1560d254db60f4cb6c26cdaf, type: 3}
+  cardTemplate: {fileID: 21300000, guid: d6852b5d608129f4493f475cf9ab36a9, type: 3}
+  cardEffect: {fileID: 100004, guid: fb7b0526ade434043b350a180d741cf3, type: 3}
+  cardEffectScale: {x: 5, y: 5, z: 5}

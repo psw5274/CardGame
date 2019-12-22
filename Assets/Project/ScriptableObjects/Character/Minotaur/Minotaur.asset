@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b20ee69e13d14b2468737b12273b739e, type: 3}
+  m_Name: Minotaur
+  m_EditorClassIdentifier: 
+  characterName: "\uBBF8\uB178\uD0C0\uC6B0\uB85C\uC2A4"
+  statMaxHP: 25
+  characterModelPrefab: {fileID: 4886135587742914262, guid: 154df491ba4b7164bb2134d6bafa32b9,
+    type: 3}
+  statATK: 4
+  enemyAttackEffect: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  playerStandingImage: {fileID: 0}
+  playerDefaultDeck: []
+  isUnlock: 1

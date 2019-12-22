@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b20ee69e13d14b2468737b12273b739e, type: 3}
+  m_Name: Kerberos
+  m_EditorClassIdentifier: 
+  characterName: "\uCF00\uB974\uBCA0\uB85C\uC2A4"
+  statMaxHP: 25
+  characterModelPrefab: {fileID: 5851513532505460584, guid: d7317d26ebae54442aeee882e64f51fd,
+    type: 3}
+  statATK: 4
+  enemyAttackEffect: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  playerStandingImage: {fileID: 0}
+  playerDefaultDeck: []
+  isUnlock: 1
